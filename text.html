@@ -1,0 +1,31 @@
+<h1 class="animate-charcter">Script.Js</h1>
+<style>
+   .animate-charcter{
+     text-transform:uppercase;
+     background-image:linear-gradient(
+       -220deg,
+       red 0%,
+       #e0b284 19%,
+       blue 29%,
+       red 67%,
+       #e0b284 80%,
+       blue 100%
+     );
+  background-size:auto auto;
+  background-clip:border-box;
+   background-size: 200% auto;
+   color:#e0b284
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s linear infinite;
+  display: inline-block;
+  font-size: 30px
+}
+@keyframes textclip {
+    to {
+       background-position: 200%;
+     }
+ }
+
