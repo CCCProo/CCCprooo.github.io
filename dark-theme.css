@@ -2,34 +2,19 @@
 				margin: 0;
 				padding: 0;
 			}
+	html{
+		background-color: #434743;
+	}
+	html .amogus{
+		background-color: #161a1f;
+		border: 4px solid white;
+		color: white;
+	}
 
-			.amogus{
-				background-color: #efdecd;
-				height: 510px;
-				width: 840px;
-				position: relative;
-				left: 0;
-				margin-left: 40px;
-				margin-top: 100px;
-				border-radius: 30px;
-				border: 4px solid black;
-				padding: 20px;
-
-
-}
-.amogus2{
-				background-color: #efdecd;
-				height: 570px;
-				justify-content: center;
-				text-align: center;
-				width: 840px;
-				position: relative;
-				left: 0;
-				margin-left: 40px;
-				margin-top: 100px;
-				border-radius: 30px;
-				border: 4px solid black;
-				padding: 20px;
+html .amogus2{
+				background-color: #161a1f;
+		border: 4px solid white;
+		color: white;
 }
 
 
@@ -51,8 +36,8 @@
     font-family: 'PT Sans Narrow', sans-serif;
 	text-align: center;
 }
-header {
-	background-color: white;
+body header {
+	background-color: #353b39;
   box-shadow: 0 4px 6px rgba(0,0,0,.2); 
   top: 0;
   height: 100px;
@@ -93,7 +78,9 @@ ul li{
 	list-style: none;
 
 }
-li a {
+
+
+body li a {
   color: #868686;
   text-transform: uppercase;
   	color: transparent;
@@ -106,32 +93,32 @@ li {
   margin-left: 25px;
   transition: .5s linear;
 }
-ul li a::before{
+body ul li a::before{
 	opacity: 0.4;
 	content: attr(data-text);
 	position: absolute;
-	color: black;
+	color: white;
 	width: 0;
 	overflow: hidden;
 	transition: 1s;
-	border-right: 5px solid white;
+	border-right: 5px solid #353b39;
 	height: 100%;
 
 }
-ul li a:hover::before{
+body ul li a:hover::before{
 	opacity: 1;
 	width: 100%;
-	-webkit-text-stroke:0.8px blue;
+	-webkit-text-stroke:0.8px white;
 	text-shadow: 2px 2px 2px red;
 }
 
-.first {
+body .first {
 	height: 100%;
 	width:100%;
 	background-image: url(logo.bmp);
 	background-size: cover;
 	background-position: center;
-	margin-top: 100px;
+	margin-top: 70px;
 	
 }
 .title{
@@ -193,31 +180,29 @@ img{
 
 
 }
-.container2 .text{
+body .container2 .text{
 	position: relative;
 	width: 50px;
 	height: 50px;
 	transform-style: preserve-3d;	transform: rotateY(20deg) rotateX(10deg);
 	transition: 2.5s ease-in-out;
 }
-.container2 .text::before{
+body .container2 .text::before{
 	content: '';
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background:  linear-gradient(red,blue);
-	transform-origin: left;
+background: linear-gradient(black,black,#8a2be2, black,#8a2be2,black);	transform-origin: left;
 	transform: rotateY(90deg) translateX(-26px);
 }
-.container2 .text span{
+body .container2 .text span{
 	position: absolute;
 	top: 0; 
 	left: 0;
 
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(red,blue);
-	display: flex;
+background: linear-gradient(black,black,#8a2be2, black,#8a2be2,black);	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 20px;
@@ -234,23 +219,23 @@ img{
 
 	transform-style: preserve-3d;	transform: rotateY(20deg) rotateX(10deg);
 }
-.container2 .text1::before{
+body .container2 .text1::before{
 	content: '';
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background:  linear-gradient(black,black,#8a2be2, black,#8a2be2,black,black);
+	background:  linear-gradient(red,blue);
 	transform-origin: left;
 	transform: rotateY(90deg) translateX(-26px);
 }
-.container2 .text1 span{
+body .container2 .text1 span{
 	position: absolute;
 	top: 0; 
 	left: 0;
 
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(black,black,#8a2be2, black,#8a2be2,black,black);
+	background: linear-gradient(red,blue);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -267,158 +252,152 @@ img{
 	transform: rotateX(280deg);
 	}
 
-#btn{
-	border-radius: 20px; 
-	color: white;
-	font-size: 20px;
-	width: 200px;
-	position: relative;
-    background: black;
- 	right: 0;
- 	margin-top: 10px;
- 	margin-left: 40px;
 
+
+body #btn{
+	border-radius: 20px; 
+	background-color: white;
+	color: black;
 
 }
-.btn2{
+
+body .btn2{
 	border-radius: 20px; 
-	color: white;
+	color: black;
 	height: 50px;
 	font-size: 20px;
 	width: 200px;
-    background: black;
+	position: relative;
+    background: white;
+    border:3px solid black;
  	right: 0;
  	margin-top: 10px;
- 	margin-right: 10px;
 
 
 
 }
 
-
-
-
-label{
-	position: absolute;
-	width: 160px;
-	height: 70px;
-	right: 0;
-	margin-right: 19px;
-	cursor: pointer;	margin-top: -10px;
-
-}
-label input{
-	position: relative;
-	z-index: 1;
-	text-decoration: none;
-	display: none;
-}
-label span{
-	position: absolute;
-	top:0;
-	left: 0;
-	width: 100%;
-	border-radius: 80px;
-	height: 100%;
-	background-color: black;
-	box-shadow: 0 15px 25px black;
-		border: 5px solid white;
-
-
+body .popup{
+	background-color: #4f4f4f;
 }
 
-label input:checked ~ span{
-	background-color: black;
-	box-shadow: 0 15px 25px black;
-	border: 5px solid white;
+
+body label input:checked ~ span{
+	background-color: white;
+	box-shadow: 0 15px 25px white;
+	border: 5px solid black;
 }
 
 label span i{
 	position: absolute;
 	top: 4px;
 	left: 4px;
-	width: 60px;
-	height: 60px;background-color: white;
+	width: 72px;
+	height: 72px;background-color: ;
 	border-radius: 50%;
 	transition: 0.5s
 
 }
 
+body label input:checked ~ span i{
+	left: 84px;
+	background-color: black;
 
+}
 
 label span i ion-icon{
 	font-size: 30px;
 	text-align: center;
 	justify-content: center;
-	margin-top: 16px;
-	margin-left: 16px;''
+	margin-top: 18px;
+	margin-left: 20px;''
 }
 
-label input:checked ~ span i ion-icon{
-	color: black;
-}
-
- label input:checked ~ span{
-	background-color: white;
-	box-shadow: 0 15px 25px white;
-	border: 5px solid black;
-}
-
- label input:checked ~ span i{
-	left: 96px;
-	background-color: black;
-
-}
-
-
-label input:checked ~ span i ion-icon{
+body  label input:checked ~ span i ion-icon{
 color:white;
 	background-color: ;
-	
+
 
 }
 
-.foto{
-	border-radius: 1000px;
-	width: 100px;
-	left: 50%;
-	right: 50%;
-	margin-left: -50px;
+
+		@media screen and (max-width: 445px){
+			body label input:checked ~ span i{
+	left: 37px;
+
+
+}
+
+			body header {
+	background-color: #353b39;
+  box-shadow: 0 4px 6px rgba(0,0,0,.2); 
+  top: 0;
+  height: 80px;
+  position: fixed;
+  width: 100%; 
+}
+body nav {
+  max-width: 660px;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+body .logo {
+  margin: 0;
+  height: 50px;
+  top: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+  position: absolute;
+}
+body ul {
+  margin: 0;
+  margin-right: 25px;
+  padding-left: 0;
+  float: right;
+  height: 70px;
+  line-height: 70px;
+}
+body a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+body ul li{
 	position: relative;
-	border: 5px solid red;
-}
 
-.fotodiv{
-	background-color: white;
-	width: 90%;
-	position:absolute;
-	padding: 20px;
-	border-radius: 20px;
-	justify-content: center;
-	text-align: center;
-	margin-left: -4px;
 }
+body li a {
+  color: #868686;
+  	color: transparent;
+	-webkit-text-stroke:1px red;
+	font-size: 14px;
+	position:relative; ;
+	left: 0;
 
-.text2{
-	color: black;
-	font-size: 20px;
-	padding-bottom: 10px;
-}
-.fotodiv1{
-	background-color: white;
-	width: 94%;
-	position:absolute;
 	
-	border-radius: 20px;
-	justify-content: center;
-	text-align: center;
-	margin-left: -4px;
-	margin-top: 200px;
 }
-.foto31{
-	justify-content: center;
-	 margin-left: 100px;
-	  border-radius: 60px;
-	  border-radius: 60px;
-	   background-position: center center;
+body li {
+  display: inline-block;
+  margin-left: 4px;
+  transition: .5s linear;
 }
+body ul li a::before{
+	opacity: 0.1;
+	content: attr(data-text);
+	position: absolute;
+	color:white;
+	width: 0;
+	overflow: hidden;
+	transition: 1s;
+	border-right: 5px solid #353b39;
+	height: 80%;
+
+}
+body ul li a:hover::before{
+ 	opacity: 1;
+	width: 100%;
+	-webkit-text-stroke:0.8px white;
+	text-shadow: 2px 2px 2px red;
+}
+		}
